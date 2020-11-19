@@ -1,5 +1,4 @@
 FROM selenium/standalone-chrome
 
-apt update
-apt install maven default-jre
-apt autoremove && apt clean
+apk --no-cache maven
+apk --no-cache default-jre
